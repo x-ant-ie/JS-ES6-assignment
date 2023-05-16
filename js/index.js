@@ -1,3 +1,4 @@
+/* ASSIGNMENT 1 */
 
 // Declare a constant variable named "PI" and assign it the value of 3.14
 
@@ -33,8 +34,10 @@ create a new string that says "Hello, John!" and assign it to a variable called�
 
   console.log(greeting);
 
+/*  ASSIGNMENT2 */
 
-/* TERMINAL COMMANDS AND HOW TO USE THEM */
+
+// TERMINAL COMMANDS AND HOW TO USE THEM
 
 /*   cd:  (change directory) is used to navigate between directories in the terminal. For example, to navigate to your home directory, you would type cd ~ */
 /*   ls:  (list) is used to list the contents of a directory. For example, to list the files and directories in your current directory, you would type ls. */
@@ -43,3 +46,44 @@ create a new string that says "Hello, John!" and assign it to a variable called�
 /*   cp:  (copy) is used to copy files and directories. For example, to copy a file called "myfile.txt" to a new file called "mynewfile.txt", you would type cp myfile.txt mynewfile.txt. To copy a directory and its contents, you would use the -r flag, like this: cp -r mydirectory newdirectory */
 /*   mv: (move) is used to move files and directories. For example, to move a file named mydoc.txt to a directory named myfolder, you would type mv mydoc.txt myfolder/. */
 /*   touch : is used to create a new file. For example, to create a new file named myfile.txt, you would type touch myfile.txt. */
+
+
+/* ASSIGNMENT 3 */
+/* Question1 - Multiply Function*/
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+ 
+let result = multiply(6, 9);
+console.log(result);
+
+
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+
+/* Question2 - Grade Calculator Function
+Write a function called calculateGrade that takes a score as an argument and returns a letter grade based on the following grading scale:
+A: 90 or above
+B: 80-89
+C: 70-79
+D: 60-69
+F: below 60 */
+
+function calculateGrade(score) {
+  if (score >= 90) {
+    return 'A';
+  } else if (score >= 80) {
+    return 'B';
+  } else if (score >= 70) {
+    return 'C';
+  } else if (score >= 60) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
+
+let grade = calculateGrade(85);
+console.log(grade); 
